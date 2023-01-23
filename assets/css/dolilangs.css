@@ -1,0 +1,100 @@
+/* 
+ * Copyright (C) 2023 Anthony Damhet <anthony.damhet@outlook.fr>
+ *
+ * This program and files/directory inner it is free software: you can 
+ * redistribute it and/or modify it under the terms of the 
+ * GNU Affero General Public License (AGPL) as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU AGPL for more details.
+ *
+ * You should have received a copy of the GNU AGPL
+ * along with this program.  If not, see <https://www.gnu.org/licenses/agpl-3.0.html>.
+
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --colorprimary: #6c6aa8;
+  --colortextlight: #b2b2b2;
+  --colorsuccess: #25a580;
+  --colordanger: #fb2a52;
+  --colorwarning: #f88533;
+
+  --colorgray: #969696;
+}
+
+body {margin:0;background: #f0f0f5;font-family: 'Poppins', sans-serif;font-size: 0.95em; color: #000;}
+
+.dolilangs .bg-success, .dolilangs .btn-success {background: var(--colorsuccess) !important;}
+.dolilangs .bg-primary, .dolilangs .btn-primary {background: var(--colorprimary) !important;}
+.dolilangs .bg-danger, .dolilangs .btn-danger {background: var(--colordanger) !important;}
+.dolilangs .bg-warning, .dolilangs .btn-warning {background: var(--colorwarning) !important;}
+
+.dolilangs .clr-success {color: var(--colorsuccess) !important;}
+.dolilangs .clr-primary {color: var(--colorprimary) !important;}
+.dolilangs .clr-danger {color: var(--colordanger) !important;}
+.dolilangs .clr-warning {color: var(--colorwarning) !important;}
+
+.dolilangs .fw-semibold {font-weight: 500;}
+
+.dolilangs .table {font-size: 0.9em;}
+.dolilangs .table.border.table-bordered tr {border:1px solid #e9edf4;}
+.dolilangs .table.border.table-bordered tr th {border:1px solid #e9edf4;padding: 16px;font-weight: 700}
+.dolilangs .table.border.table-bordered tr td {border:1px solid #e9edf4;padding: 16px; line-height: 1.3}
+
+.dolilangs .gray-link {color: var(--colorgray);}
+.dolilangs .gray-link:hover {color: var(--colorprimary);}
+
+.dolilangs input[type=text], .dolilangs textarea {outline: none;box-shadow: none !important;}
+.dolilangs input[type=text]:focus, .dolilangs textarea:focus {border-color: var(--colorprimary) !important;}
+
+/************/
+
+.sidebar {background: #fff;width: 280px;position: fixed;min-height: 100%;top: 0;}
+.sidebar .sidebar-logo {height: 42px;margin: 36px 24px;line-height: 42px;font-weight: 700;font-size: 21px}
+.sidebar .sidebar-logo i {color: var(--colorprimary);margin-right: 4px}
+.sidebar .sidebar-logo span {font-weight: 500}
+
+.sidebar .sidebar-menu {padding: 16px 24px}
+.sidebar .sidebar-menu ul {}
+.sidebar .sidebar-menu ul li.sidetitle {font-weight: 700;margin-bottom: 20px;text-transform: uppercase;font-size: 0.85em;margin-top: 36px}
+.sidebar .sidebar-menu ul li.sidetitle:first-child {margin-top: 0}
+.sidebar .sidebar-menu ul li.sidetitle a {text-decoration: none; color: #000;}
+.sidebar .sidebar-menu ul li.sidetitle a i {color: var(--colorprimary);margin-right: 3px;transition: margin 0.1s ease-in-out;}
+.sidebar .sidebar-menu ul li.sidetitle a:hover i {margin-right: 6px;}
+.sidebar .sidebar-menu ul li.sidelink {margin: 12px 0 12px 12px;font-size: 0.9em;}
+.sidebar .sidebar-menu ul li.sidelink a {color: gray;text-decoration: none;}
+.sidebar .sidebar-menu ul li.sidelink a:hover {color: var(--colorprimary);text-decoration: none;}
+.sidebar .sidebar-menu ul li.sidelink a.active {color: var(--colorprimary);font-weight: 600}
+
+.main-content {margin-left: 280px;padding: 42px 128px;}
+.main-content h1 {font-weight: 700;font-size: 21px;margin-bottom: 36px;}
+
+.main-content {position: relative;z-index: 1;}
+.main-content .card {margin: 12px 0;border: none;}
+.main-content .card .card-header {background: #fff;display: flex;align-items: flex-start;border-bottom: 1px solid #e9edf4 }
+.main-content .card .card-header h3 {margin-bottom: 0;font-weight: 600;line-height: 1.3}
+.main-content .card .card-header .card-title a {color: #000;text-decoration: none;}
+.main-content .card .card-header .card-title a:hover {color: var(--colorprimary);}
+.main-content .card .card-header .card-options {margin-left:auto;color: var(--colortextlight);}
+
+.main-content .row.list-modules .card .card-body .progress {height: 8px;}
+
+.main-content .notifs {position: absolute;top: 24px;z-index: 2;right: 24px;}
+.main-content .notifs .notif {border-radius: 4px;}
+.main-content .notifs .notif.success {background: var(--colorsuccess);}
+.main-content .notifs .notif.error {background: var(--colordanger);}
+.main-content .notifs .notif.warning {background: var(--colorwarning);}
+
+.main-content .notifs .notif {display: flex;color: #fff;align-items: flex-start;max-width: 620px}
+.main-content .notifs .notif .notif-msg {font-weight: 500; flex: 1;line-height: 1.3;font-size: 0.9em}
+.main-content .notifs .notif .notif-close {padding-left: 16px;}
+
+/*@media only screen (min-width: 768px){
+}*/
