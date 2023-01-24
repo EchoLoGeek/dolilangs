@@ -17,6 +17,9 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/agpl-3.0.html>.
 
  */
+	
+	//
+	$app_version = '0.1';
 
 	//
 	$db = new PDO('mysql:dbname=dolilangs;host=127.0.0.1', 'root', '');
